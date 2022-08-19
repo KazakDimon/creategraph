@@ -213,7 +213,7 @@ class Window(QtWidgets.QWidget):
         self.label_delimit_csv = QtWidgets.QLabel('Разделитель:')
         self.label_delimit_csv.setToolTip('Разделитель можно посмотреть, открыв файл в текстовом редакторе')
         self.combo_box_delimit_csv = QtWidgets.QComboBox()
-        self.combo_box_delimit_csv.addItems(['Запятая', 'Точка с запятой'])
+        self.combo_box_delimit_csv.addItems([ 'Точка с запятой','Запятая'])
         self.h_line_delimit_csv = QtWidgets.QHBoxLayout()
         # Устанвливаем политику изменения размеров виджетов
         self.label_delimit_csv.setSizePolicy(size_policy_widgets)
