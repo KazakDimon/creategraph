@@ -4,7 +4,7 @@ from matplotlib.ticker import AutoMinorLocator
 import numpy as np
 import os
 from datetime import timedelta
-from path import Path
+from pathlib import Path
 
 
 def time_str_to_timedelta(string_time):
@@ -39,7 +39,7 @@ def create_image_file( **kwargs):
     :return: создаёт файл temp_image.png в директории со скриптом
     """
     # Создаём нужные переменные
-    path_default = Path("20191025.csv") # Путь до файла по умолчанию
+    path_default = Path.cwd() / "20191025.csv" # Путь до файла по умолчанию
     dict_time_main = {'5 мин': 300,
                       '10 мин': 600,
                       '20 мин': 1200,
